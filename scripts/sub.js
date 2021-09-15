@@ -54,7 +54,7 @@ class Main {
     }
 
     _init() {
-        new MobileMenu();
+        // new MobileMenu();
         Pace.on('done', this._paceDone.bind(this));
     }
 

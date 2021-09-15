@@ -5,7 +5,11 @@
   }
 }
 .certs {
-    &__item {
-      flex-basis: 21%;
-    }
+  &__item {
+    flex-basis: 21%;
   }
+}
+
+.side {
+  display: block;
+}

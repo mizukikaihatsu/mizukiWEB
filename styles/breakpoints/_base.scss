@@ -4,6 +4,7 @@ body {
   // グーグルフォント
   font-family: 'Fredoka One', 'Yusei Magic', sans-serif;
   color: $cTlGray;
+  background: url(../images/yellow.jpg);
 }
 img {
   max-width: 100%;
@@ -17,7 +18,7 @@ img {
   font-size: 17px;
 }
 .font-lr {
-  font-size: 17px;
+  font-size: 22px;
 }
 .font-lg {
   font-size: 25px;
@@ -47,7 +48,7 @@ img {
   max-width: $contentMaxWidth;
 }
 .main-title {
-  @extend .font-md;
+  @extend .font-lg;
   font-weight: 600;
   margin-bottom: 0;
   display: block;
@@ -66,8 +67,20 @@ img {
   padding-top: $navHeight;
 }
 
+// サイドバーの重なりをなおす
+#main-content {
+  position: relative;
+  z-index: 0;
+}
+
+main {
+  position: relative;
+  z-index: -1;
+}
+
 #container {
   // モバイルメニューを隠す
+  background: url(../images/yellow.jpg);
   position: relative;
   z-index: 10;
   // ゆっくりモバイルメニューを表示する
@@ -93,10 +106,10 @@ img {
     box-shadow: 10px 0 25px -10px rgba(0, 0, 0, .5);
   }
 
-  &__nav {
-    // スマホ時はヘッダーメニュー表示しない
-    display: none;
-  }
+  // &__nav {
+  //   // スマホ時はヘッダーメニュー表示しない
+  //   display: none;
+  // }
 
   &__ul {
     display: flex;
@@ -140,6 +153,7 @@ img {
 
 .detail {
   @extend .content-width;
+  @extend .mb-lg;
 
   &__container {
     @extend .flex;
@@ -201,6 +215,7 @@ img {
 
 .works {
   @extend .content-width;
+  @extend .mb-lg;
 
   &__inner {
     @extend .flex;
@@ -214,6 +229,7 @@ img {
 
 .certs {
   &__inner {
+    
     position: relative;
     &::before {
       content: '';
@@ -223,7 +239,6 @@ img {
       width: 100%;
       height: 90%;
       background-color: $cBgGray;
-
     }
   }
   &__header{
@@ -234,7 +249,7 @@ img {
     z-index: 2;
     @extend .flex;
     @extend .content-width;
-    @extend .pb-sm
+    @extend .pb-sm;
   }
 
   &__title {
@@ -307,5 +322,65 @@ img {
     font-size: 1.1rem;
     // 左右の中央揃え
     justify-content: center;
+  }
+}
+
+.side {
+  // サイドバーをスマホは非表示
+  display: none;
+  // スクロールに追随させる
+  position: fixed;
+  top: 70%;
+  transform: translateY(-50%);
+  @extend .font-lr;
+
+  & a {
+    color: $cTlGray;
+    text-decoration: none !important;
+    vertical-align: middle;
+  }
+
+  &.left {
+    left: 50px;
+
+    & .side__inner {
+      transform-origin: top left;
+      transform: rotate(-90deg);
+    }
+  }
+  
+  &.right {
+    right: 50px;
+
+    & .side__inner {
+      transform-origin: top right;
+      transform: rotate(90deg);
+    }
+  }
+}
+
+.icon {
+  position: relative;
+
+  @include p-base($left: -20px, $top: 50%, $width: 1em, $height: 1em) {
+    transform: translateY(-50%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &.qiita {
+    &::before {
+      background-image: url(../images/qiitaicon.png);
+      margin: 0 -10px;
+    }
+  }
+
+  &.github {
+    &::before {
+      background-image: url(../images/qiitaicon.png);
+      margin: 0 -10px;
+
+    }
   }
 }
