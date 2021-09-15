@@ -1,0 +1,311 @@
+// スマホに対して
+
+body {
+  // グーグルフォント
+  font-family: 'Fredoka One', 'Yusei Magic', sans-serif;
+  color: $cTlGray;
+}
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+.font-sm {
+  font-size: 14px;
+}
+.font-md {
+  font-size: 17px;
+}
+.font-lr {
+  font-size: 17px;
+}
+.font-lg {
+  font-size: 25px;
+}
+
+// bootstrap上書き
+
+.mb-sm {
+  margin-bottom: 16px !important;
+}
+.mb-lg {
+  margin-bottom: 80px !important;
+}
+.pb-sm {
+  padding-bottom: 16px !important;
+}
+.pb-lg {
+  padding-bottom: 80px !important;
+}
+
+.content-width {
+  // 常に余白アリ
+  width: 90%;
+  // 中央揃え
+  margin: 0 auto;
+  // 上限値
+  max-width: $contentMaxWidth;
+}
+.main-title {
+  @extend .font-md;
+  font-weight: 600;
+  margin-bottom: 0;
+  display: block;
+}
+.sub-title {
+  @extend .font-sm;
+  color: $cSubTitle;
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+#content {
+  // ヘッダーの高さのパディングをつける
+  padding-top: $navHeight;
+}
+
+#container {
+  // モバイルメニューを隠す
+  position: relative;
+  z-index: 10;
+  // ゆっくりモバイルメニューを表示する
+  transition: transform .5s, box-shadow .5s;
+}
+
+.header {
+  // 画面の上部に固定
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: $navHeight;
+  z-index: 100;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, .8);
+  box-shadow: 10px 0 25px -10px rgba(0, 0, 0, .5);
+
+  &.triggered {
+    background-color: rgba(255, 255, 255, .9);
+    box-shadow: 10px 0 25px -10px rgba(0, 0, 0, .5);
+  }
+
+  &__nav {
+    // スマホ時はヘッダーメニュー表示しない
+    display: none;
+  }
+
+  &__ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    // align-items: center;
+  }
+
+  &__li {
+    margin-left: 26px;
+
+    & > a {
+      color: $cSubTitle;
+      // ホバー時の下線
+      text-decoration: none !important;
+      // 大文字にする
+      text-transform: uppercase;
+      font-size: 1.2rem;
+    }
+  }
+
+  & .logo {
+    font-size: 38px;
+    // 左右の中央揃え
+    justify-content: center;
+  }
+
+  &__inner {
+    display: flex;
+    // 左右に散らす
+    justify-content: space-between;
+    // 上下中央揃え
+    align-items: center;
+    // 画面いっぱいにする
+    @extend .content-width;
+
+
+  }
+}
+
+.detail {
+  @extend .content-width;
+
+  &__container {
+    @extend .flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: $cBgGray;
+    position: relative;
+    z-index: 0;
+  }
+
+  &__title {
+    // titleに親要素
+    position: relative;
+
+    // 棒を疑似要素beforeで
+    @include p-base($display: none, $width: 100px, $height: 1px, $top: 50%, $left: -120px) {
+      background-color: $cBlack;
+      transform: translateY(-50%) scaleX(0);
+      // スライドのアニメーションが終わってから棒が伸びるようにする
+      transition: transform 0.3s ease 1.6s;
+      transform-origin: right;
+    }
+
+    &.inview {
+      &::before {
+        transform: translateY(-50%);
+      }
+
+    }
+  }
+
+  &__sub {
+    @extend .mb-sm;
+  }
+
+  &__img {
+    height: 300px;
+    @extend .mb-sm;
+    transition: box-shadow 1ms linear 0.8s;
+    
+    & > img {
+      position: relative;
+      z-index: -1;
+      // 外側の親要素の縦横100%に
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+
+    &.inview {
+      box-shadow: inset 0 0 30px $cBlack;
+    }
+  }
+
+  &__texts {
+    @extend .pb-sm;
+  }
+}
+
+.works {
+  @extend .content-width;
+
+  &__inner {
+    @extend .flex;
+  }
+
+  &__title {
+    @extend .font-lr;
+    @extend .mb-sm;
+  }
+}
+
+.certs {
+  &__inner {
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 90%;
+      background-color: $cBgGray;
+
+    }
+  }
+  &__header{
+    @extend .content-width;
+  }
+  &__container {
+    position: relative;
+    z-index: 2;
+    @extend .flex;
+    @extend .content-width;
+    @extend .pb-sm
+  }
+
+  &__title {
+    @extend .font-md;
+    @extend .mb-sm;
+  }
+
+  &__img {
+    height: 150px;
+    overflow: hidden;
+    margin-bottom: 5px;
+
+    & > img {
+      object-fit: cover;
+      object-position: top;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+.logo {
+  font-size: 42px;
+  display: flex;
+
+  &__img {
+    // ネズミロゴのサイズ
+    width: 1.5em;
+  }
+
+  &__mizuki {
+    color: $cTxYellow;
+  }
+}
+
+.footer {
+  padding: 60px 0;
+  @extend .content-width;
+
+  &__nav {
+    // 横並びにする
+    @extend .flex;
+    // 両端にそろえる
+    justify-content: space-between;
+    // 上下中央揃え
+    align-items: center;
+    // インライン要素の中央揃え
+    text-align: center;
+  }
+
+  &__ul {
+    @extend .flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  &__li {
+    padding: 0;
+    margin: 10px;
+
+    & > a {
+      color: $cSubTitle;
+      // ホバー時の下線
+      text-decoration: none !important;
+    }
+  }
+
+  & .logo {
+    font-size: 1.1rem;
+    // 左右の中央揃え
+    justify-content: center;
+  }
+}

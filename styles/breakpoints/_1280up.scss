@@ -1,0 +1,11 @@
+// デスクトップPC
+.detail {
+  &__container {
+      padding: 50px 150px;
+  }
+}
+.certs {
+    &__item {
+      flex-basis: 21%;
+    }
+  }

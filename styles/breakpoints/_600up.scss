@@ -1,0 +1,59 @@
+// タブレット
+
+.flex {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.works {
+    &__inner {
+        // 左右に散らす
+        justify-content: space-between;
+    }
+    &__item {
+        // worksが縦に何列か
+        flex-basis: 47%;
+        margin-bottom: 60px;
+        //worksのすきま
+        // margin-left: 5px;
+        // margin-right: 5px;
+    }
+}
+
+.certs {
+    &__container {
+        // 左右に散らす
+        justify-content: space-between;
+    }
+    &__item {
+        // 縦に何列か
+        flex-basis: 47%;
+    }
+}
+
+.detail {
+    &__container {
+        padding: 50px;
+    }
+    &__texts,
+    &__img {
+        flex-basis: 47%;
+    }
+
+    &__texts {
+        display: flex;
+        align-items: flex-end;
+    }
+  }
+
+.footer {
+    & .logo {
+        // 左寄せにする
+        justify-content: flex-start;
+    }
+
+    &__li {
+        margin-left: 0;
+        margin-right: 30px;        
+    }
+}
