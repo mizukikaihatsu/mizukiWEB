@@ -714,7 +714,7 @@
 body {
   font-family: 'Fredoka One', 'Yusei Magic', sans-serif;
   color: #403e3d;
-  background: url(../images/yellow.jpg);
+  background: #fbf1d6;
 }
 
 img {
@@ -795,7 +795,7 @@ main {
 }
 
 #container {
-  background: url(../images/yellow.jpg);
+  background: #fbf1d6;
   position: relative;
   z-index: 10;
   -webkit-transition: -webkit-transform .5s, -webkit-box-shadow .5s;
@@ -873,7 +873,7 @@ main {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 15px;
-  background-color: #fbf1d6;
+  background: url(../images/yellow.jpg);
   position: relative;
   z-index: 0;
 }
@@ -939,7 +939,7 @@ main {
   left: 0;
   width: 100%;
   height: 90%;
-  background-color: #fbf1d6;
+  background: url(../images/yellow.jpg);
 }
 
 .certs__container {

@@ -4,7 +4,7 @@ body {
   // グーグルフォント
   font-family: 'Fredoka One', 'Yusei Magic', sans-serif;
   color: $cTlGray;
-  background: url(../images/yellow.jpg);
+  background: $cBgGray;
 }
 img {
   max-width: 100%;
@@ -80,7 +80,7 @@ main {
 
 #container {
   // モバイルメニューを隠す
-  background: url(../images/yellow.jpg);
+  background: $cBgGray;
   position: relative;
   z-index: 10;
   // ゆっくりモバイルメニューを表示する
@@ -159,7 +159,7 @@ main {
     @extend .flex;
     justify-content: space-between;
     padding: 15px;
-    background-color: $cBgGray;
+    background: url(../images/yellow.jpg);
     position: relative;
     z-index: 0;
   }
@@ -239,7 +239,7 @@ main {
       left: 0;
       width: 100%;
       height: 90%;
-      background-color: $cBgGray;
+      background: url(../images/yellow.jpg);
     }
   }
   &__header{
