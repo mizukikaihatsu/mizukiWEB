@@ -98,6 +98,6 @@ class Main {
         this.observers = new ScrollObserver('.nav-triger', this._navAnimation.bind(this), {once: false});
         this.observers = new ScrollObserver('.cover-slide', this._inviewAnimation);
         this.observers = new ScrollObserver('.tween-animate-title', this._textAnimation);
-        // this.observers = new ScrollObserver('.appear', this._inviewAnimation);
+        this.observers = new ScrollObserver('.appear', this._inviewAnimation);
     }
 }

@@ -63,8 +63,8 @@ img {
 }
 
 #content {
-  // ヘッダーの高さのパディングをつける
-  padding-top: $navHeight;
+  // ヘッダーの高さ1.5倍のパディングをつける
+  padding-top: 1.5*$navHeight;
 }
 
 // サイドバーの重なりをなおす
@@ -177,12 +177,7 @@ main {
       transform-origin: right;
     }
 
-    &.inview {
-      &::before {
-        transform: translateY(-50%);
-      }
-
-    }
+    
   }
 
   &__sub {
@@ -210,6 +205,12 @@ main {
 
   &__texts {
     @extend .pb-sm;
+
+    &.inview {
+      & .detail__title::before {
+        transform: translateY(-50%);
+      }
+    }
   }
 }
 
@@ -333,6 +334,7 @@ main {
   top: 70%;
   transform: translateY(-50%);
   @extend .font-lr;
+  transition: all .3s ease-in;
 
   & a {
     color: $cTlGray;
@@ -341,7 +343,13 @@ main {
   }
 
   &.left {
-    left: 50px;
+    // 画面外
+
+    left: -50px;
+
+    &.inview {
+      left: 50px;
+    }
 
     & .side__inner {
       transform-origin: top left;
@@ -350,7 +358,12 @@ main {
   }
   
   &.right {
-    right: 50px;
+    // 画面外
+    right: -50px;
+
+    &.inview {
+      right: 50px;
+    }
 
     & .side__inner {
       transform-origin: top right;
