@@ -4,7 +4,7 @@ body {
   // グーグルフォント
   font-family: 'Fredoka One', 'Yusei Magic', sans-serif;
   color: $cTlGray;
-  background: $cBgGray;
+  background: url(../images/yellow.jpg);
 }
 img {
   max-width: 100%;
@@ -80,7 +80,7 @@ main {
 
 #container {
   // モバイルメニューを隠す
-  background: $cBgGray;
+  background: url(../images/yellow.jpg);
   position: relative;
   z-index: 10;
   // ゆっくりモバイルメニューを表示する
@@ -98,7 +98,7 @@ main {
   background-color: transparent;
   display: flex;
   align-items: center;
-  background-color: rgba(255, 255, 255, .8);
+  background-color: rgba(253, 248, 232, 0.466);
   box-shadow: 10px 0 25px -10px rgba(0, 0, 0, .5);
 
   &.triggered {
@@ -153,13 +153,13 @@ main {
 
 .detail {
   @extend .content-width;
-  @extend .mb-lg;
+  @extend .mb-sm;
 
   &__container {
     @extend .flex;
     justify-content: space-between;
     padding: 15px;
-    background: url(../images/yellow.jpg);
+    background: $cBgGray;
     position: relative;
     z-index: 0;
   }
@@ -226,6 +226,13 @@ main {
     @extend .font-lr;
     @extend .mb-sm;
   }
+
+  & a {
+  color: $cSubTitle !important;
+  // ホバー時の下線
+  text-decoration: none !important;
+  }
+
 }
 
 .certs {
@@ -239,7 +246,7 @@ main {
       left: 0;
       width: 100%;
       height: 90%;
-      background: url(../images/yellow.jpg);
+      background: $cBgGray;
     }
   }
   &__header{
@@ -311,6 +318,7 @@ main {
   &__li {
     padding: 0;
     margin: 10px;
+    font-size: 1.3em;
 
     & > a {
       color: $cSubTitle;
@@ -331,7 +339,7 @@ main {
   display: none;
   // スクロールに追随させる
   position: fixed;
-  top: 70%;
+  top: 55%;
   transform: translateY(-50%);
   @extend .font-lr;
   transition: all .3s ease-in;
@@ -384,16 +392,37 @@ main {
 
   &.qiita {
     &::before {
-      background-image: url(../images/qiitaicon.png);
+      background-image: url(../images/qiita-logo.png);
       margin: 0 -10px;
     }
   }
 
   &.github {
     &::before {
-      background-image: url(../images/qiitaicon.png);
+      background-image: url(../images/github-logo.png);
       margin: 0 -10px;
 
     }
   }
 }
+
+.btn {
+  position: relative;
+  display: inline-block;
+  background-color: $cBlack;
+  border: 1px solid $cBlack;
+  font-weight: 600;
+  padding: 10px 40px;
+  margin: 10px auto;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: $cWhite;
+  text-decoration: none !important;
+  
+      &.letter-spacing:hover {
+          background-color: $cWhite;
+          letter-spacing: 3px;
+          color: $cBlack;
+      }
+  
+  }

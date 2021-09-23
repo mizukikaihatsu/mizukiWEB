@@ -81,73 +81,6 @@
           transition-delay: 1s;
 }
 
-.btn {
-  position: relative;
-  display: inline-block;
-  background-color: white;
-  border: 1px solid black;
-  font-weight: 600;
-  padding: 10px 40px;
-  margin: 10px auto;
-  cursor: pointer;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  color: black;
-  text-decoration: none !important;
-}
-
-.btn.float:hover {
-  background-color: black;
-  color: white;
-  -webkit-box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
-          box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
-}
-
-.btn.filled {
-  background-color: black;
-  color: white;
-  -webkit-box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
-          box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
-}
-
-.btn.filled:hover {
-  background-color: white;
-  color: black;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-.btn.letter-spacing:hover {
-  background-color: black;
-  letter-spacing: 3px;
-  color: white;
-}
-
-.btn.shadow {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-.btn.shadow:hover {
-  -webkit-transform: translate(-2.5px, -2.5px);
-          transform: translate(-2.5px, -2.5px);
-  -webkit-box-shadow: 5px 5px 0 0 black;
-          box-shadow: 5px 5px 0 0 black;
-}
-
-.btn.solid {
-  -webkit-box-shadow: 2px 2px 0 0 black;
-          box-shadow: 2px 2px 0 0 black;
-  border-radius: 7px;
-}
-
-.btn.solid:hover {
-  -webkit-transform: translate(2px, 2px);
-          transform: translate(2px, 2px);
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
 .animate-title,
 .tween-animate-title {
   opacity: 0;
@@ -714,7 +647,7 @@
 body {
   font-family: 'Fredoka One', 'Yusei Magic', sans-serif;
   color: #403e3d;
-  background: #fbf1d6;
+  background: url(../images/yellow.jpg);
 }
 
 img {
@@ -738,11 +671,11 @@ img {
   font-size: 25px;
 }
 
-.mb-sm, .detail__sub, .detail__img, .works__title, .certs__title {
+.mb-sm, .detail, .detail__sub, .detail__img, .works__title, .certs__title {
   margin-bottom: 16px !important;
 }
 
-.mb-lg, .detail, .works {
+.mb-lg, .works {
   margin-bottom: 80px !important;
 }
 
@@ -795,7 +728,7 @@ main {
 }
 
 #container {
-  background: #fbf1d6;
+  background: url(../images/yellow.jpg);
   position: relative;
   z-index: 10;
   -webkit-transition: -webkit-transform .5s, -webkit-box-shadow .5s;
@@ -818,7 +751,7 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(253, 248, 232, 0.466);
   -webkit-box-shadow: 10px 0 25px -10px rgba(0, 0, 0, 0.5);
           box-shadow: 10px 0 25px -10px rgba(0, 0, 0, 0.5);
 }
@@ -873,7 +806,7 @@ main {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 15px;
-  background: url(../images/yellow.jpg);
+  background: rgba(253, 248, 232, 0.7);
   position: relative;
   z-index: 0;
 }
@@ -928,6 +861,11 @@ main {
           transform: translateY(-50%);
 }
 
+.works a {
+  color: #535353 !important;
+  text-decoration: none !important;
+}
+
 .certs__inner {
   position: relative;
 }
@@ -939,7 +877,7 @@ main {
   left: 0;
   width: 100%;
   height: 90%;
-  background: url(../images/yellow.jpg);
+  background: rgba(253, 248, 232, 0.7);
 }
 
 .certs__container {
@@ -1000,6 +938,7 @@ main {
 .footer__li {
   padding: 0;
   margin: 10px;
+  font-size: 1.3em;
 }
 
 .footer__li > a {
@@ -1017,7 +956,7 @@ main {
 .side {
   display: none;
   position: fixed;
-  top: 70%;
+  top: 55%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   -webkit-transition: all .3s ease-in;
@@ -1080,13 +1019,34 @@ main {
 }
 
 .icon.qiita::before {
-  background-image: url(../images/qiitaicon.png);
+  background-image: url(../images/qiita-logo.png);
   margin: 0 -10px;
 }
 
 .icon.github::before {
-  background-image: url(../images/qiitaicon.png);
+  background-image: url(../images/github-logo.png);
   margin: 0 -10px;
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  background-color: black;
+  border: 1px solid black;
+  font-weight: 600;
+  padding: 10px 40px;
+  margin: 10px auto;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  color: white;
+  text-decoration: none !important;
+}
+
+.btn.letter-spacing:hover {
+  background-color: white;
+  letter-spacing: 3px;
+  color: black;
 }
 
 @media (min-width: 600px) {
@@ -1156,7 +1116,7 @@ main {
   .font-lg, .main-title {
     font-size: 36px;
   }
-  .mb-lg, .detail, .works {
+  .mb-lg, .works {
     margin-bottom: 150px !important;
   }
   .pb-lg {
