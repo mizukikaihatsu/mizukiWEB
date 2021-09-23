@@ -4,7 +4,7 @@ body {
   // グーグルフォント
   font-family: 'Fredoka One', 'Yusei Magic', sans-serif;
   color: $cTlGray;
-  background: url(../images/yellow.jpg);
+  background: $cBgGray;
 }
 img {
   max-width: 100%;
@@ -80,7 +80,7 @@ main {
 
 #container {
   // モバイルメニューを隠す
-  background: url(../images/yellow.jpg);
+  background: $cBgGray;
   position: relative;
   z-index: 10;
   // ゆっくりモバイルメニューを表示する
@@ -159,7 +159,7 @@ main {
     @extend .flex;
     justify-content: space-between;
     padding: 15px;
-    background: $cBgGray;
+    background:  url(../images/yellow.jpg);
     position: relative;
     z-index: 0;
   }
@@ -215,15 +215,37 @@ main {
 }
 
 .works {
-  @extend .content-width;
-  @extend .mb-lg;
 
+  @extend .mb-lg;
   &__inner {
+    
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 90%;
+      height: 90%;
+      background:  url(../images/yellow.jpg);
+      z-index: -20;
+    }
+  }
+
+  
+  &__container {
+    @extend .content-width;
     @extend .flex;
   }
 
-  &__title {
+  &__header {
+    @extend .content-width;
     @extend .font-lr;
+    @extend .mb-sm;
+  }
+
+  &__title {
+    @extend .font-md;
     @extend .mb-sm;
   }
 
@@ -240,13 +262,14 @@ main {
     
     position: relative;
     &::before {
+
       content: '';
       position: absolute;
       bottom: 0;
       left: 0;
-      width: 100%;
+      width: 90%;
       height: 90%;
-      background: $cBgGray;
+      background:  url(../images/yellow.jpg);
     }
   }
   &__header{
