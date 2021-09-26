@@ -671,11 +671,11 @@ img {
   font-size: 25px;
 }
 
-.mb-sm, .detail, .detail__sub, .detail__img, .works__header, .works__title, .certs__title {
+.mb-sm, .detail__sub, .detail__img, .works__header, .works__title, .certs__title {
   margin-bottom: 16px !important;
 }
 
-.mb-lg, .works {
+.mb-lg, .detail, .works {
   margin-bottom: 80px !important;
 }
 
@@ -870,8 +870,8 @@ main {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 90%;
-  height: 90%;
+  width: 92.5%;
+  height: 95%;
   background: url(../images/yellow.jpg);
   z-index: -20;
 }
@@ -1131,7 +1131,7 @@ main {
   .font-lg, .main-title {
     font-size: 36px;
   }
-  .mb-lg, .works {
+  .mb-lg, .detail, .works {
     margin-bottom: 150px !important;
   }
   .pb-lg {
