@@ -671,7 +671,7 @@ img {
   font-size: 25px;
 }
 
-.mb-sm, .detail__container > img, .detail__sub, .detail__img, .works__header, .works__title, .certs__title {
+.mb-sm, .detail__sub, .detail__img, .works__header, .works__title, .certs__title {
   margin-bottom: 16px !important;
 }
 
