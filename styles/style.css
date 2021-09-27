@@ -1152,9 +1152,6 @@ main {
   .certs__img {
     height: 335px;
   }
-  .detail__description {
-    margin-bottom: 40px;
-  }
   .detail__title::before {
     display: block;
   }
