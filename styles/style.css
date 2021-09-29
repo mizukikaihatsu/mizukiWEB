@@ -801,8 +801,12 @@ main {
           align-items: center;
 }
 
+.detail__container {
+  padding: 20px;
+}
+
 .detail__container > img {
-  height: 400px;
+  height: 100%;
 }
 
 .detail__title {
@@ -864,7 +868,7 @@ main {
   bottom: 0;
   right: 0;
   width: 92.5%;
-  height: 96%;
+  height: 103%;
   background: url(../images/yellow.jpg);
   z-index: -20;
 }
@@ -879,7 +883,7 @@ main {
   bottom: 0;
   left: 0;
   width: 92.5%;
-  height: 96%;
+  height: 103%;
   background: url(../images/yellow.jpg);
   z-index: -20;
 }
@@ -1100,9 +1104,6 @@ main {
     -ms-flex-preferred-size: 47%;
         flex-basis: 47%;
   }
-  .detail__container {
-    padding: 50px;
-  }
   .detail__texts, .detail__img {
     -ms-flex-preferred-size: 47%;
         flex-basis: 47%;
@@ -1159,7 +1160,7 @@ main {
 
 @media (min-width: 1280px) {
   .detail__container {
-    padding: 50px 150px;
+    padding: 20px 150px;
   }
   .certs__item {
     -ms-flex-preferred-size: 21%;
