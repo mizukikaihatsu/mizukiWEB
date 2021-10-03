@@ -680,7 +680,7 @@ img {
 }
 
 .mb-md, #flipbook {
-  margin-bottom: 40px !important;
+  margin-bottom: 70px !important;
 }
 
 .mb-lg, .detail, .works {
@@ -726,10 +726,11 @@ img {
 }
 
 #flipbook {
+  display: none;
   /* width: 400px; flipbook自体の横幅なので各ページは200px */
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
-  max-width: 1070px;
+  max-width: 1000px;
   height: 500px;
   /* margin: 10% 20%; 一番左端だとたまに見切れるので適当に移動 */
 }
@@ -1195,6 +1196,9 @@ main {
         flex-basis: 21%;
   }
   .side {
+    display: block;
+  }
+  #flipbook {
     display: block;
   }
 }
