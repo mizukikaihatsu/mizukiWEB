@@ -198,7 +198,7 @@ main {
   }
 
   &__img {
-    // height: 300px;
+    height: 500px;
     @extend .mb-sm;
     transition: box-shadow 1ms linear 0.8s;
     
@@ -235,60 +235,6 @@ main {
   }
 }
 
-.top {
-  @extend .mb-lg;
-  // &__innerright {
-  //   position: relative;
-  //   &::before {
-  //     content: '';
-  //     position: absolute;
-  //     bottom: 0;
-  //     right: 0;
-  //     width: 92.5%;
-  //     height: 103%;
-  //     background:  url(../images/yellow.jpg);
-  //     z-index: -20;
-  //   }
-  // }
-
-  // &__innerleft {
-  //   position: relative;
-  //   &::before {
-  //     content: '';
-  //     position: absolute;
-  //     bottom: 0;
-  //     left: 0;
-  //     width: 92.5%;
-  //     height: 103%;
-  //     background:  url(../images/yellow.jpg);
-  //     z-index: -20;
-  //   }
-  // }
-
-  
-  &__container {
-    @extend .content-width;
-    @extend .flex;
-  }
-
-  &__header {
-    @extend .content-width;
-    @extend .font-lr;
-    @extend .mb-sm;
-  }
-
-  &__title {
-    @extend .font-md;
-    @extend .mb-sm;
-  }
-
-  & a {
-  color: $cSubTitle !important;
-  // ホバー時の下線
-  text-decoration: none !important;
-  }
-
-}
 
 .works {
   @extend .mb-lg;
@@ -354,7 +300,7 @@ main {
       content: '';
       position: absolute;
       bottom: 0;
-      left: 0;
+      right: 0;
       width: 90%;
       height: 90%;
       background:  url(../images/yellow.jpg);

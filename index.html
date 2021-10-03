@@ -47,39 +47,10 @@
               </div>
             </aside>
             <main>
-              <!-- <section class="top">
-                <div class="top__inner">
-                  <div class="top__container">
-                    <div class="top__item">
-                      <div class="cover-slide hover-darken">
-                        <div class="bg-img-zoom img-bg50" style="background-image: url(images/app-1.jpg)"></div>
-                      </div>
-                    </div>
-                    <div class="top__item">
-                      <div class="cover-slide hover-darken">
-                        <div class="bg-img-zoom img-bg50" style="background-image: url(images/app-1.jpg)"></div>
-                      </div>
-                    </div>
-                    <div class="top__item">
-                      <div class="cover-slide hover-darken">
-                        <div class="bg-img-zoom img-bg50" style="background-image: url(images/app-1.jpg)"></div>
-                      </div>
-                    </div>
-                    <div class="top__item">
-                      <div class="cover-slide hover-darken">
-                        <div class="bg-img-zoom img-bg50" style="background-image: url(images/app-1.jpg)"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section> -->
 
               <section class="turn">
-                <div id="flipbook"">
-                  <!-- <div class="hover-darken">
-                    <div class="bg-img-zoom img-bg50" style="background-image: url(images/app-1.jpg)"></div>
-                  </div> -->
-                  <div class="fixed" style="background-image: url(images/page1.png)">Welcome to my site!</div>
+                <div id="flipbook">
+                  <div class="fixed" style="cursor: pointer;background-image: url(images/page1.png)" onclick="location.href='https://tamuracoffe.nezumizuki.xyz/'">Welcome to my site!</div>
                   <div style="background-image: url(images/page2.png)">Enjoy!</div>
                   <div style="background-image: url(images/app-1.jpg)">Fantastic!</div>
                   <div style="background-image: url(images/app-1.jpg)">Good experience</div>
@@ -89,20 +60,50 @@
               <section class="works">
                 <div class="works__item appear left">
                   <div class="works__header">
-                    <h2 class="main-title tween-animate-title">Works No.3</h2>
-                    <p class="sub-title tween-animate-title">作品その３</p>
+                    <h2 class="main-title tween-animate-title">Works No.4</h2>
+                    <p class="sub-title tween-animate-title">作品その４</p>
                   </div>
                   <div class="works__innerright item">
                     <div class="works__container">
                       <div class="detail__img cover-slide">
-                        <img class="img-zoom" src="images/スクリーンショット (30).png" style="
-                        object-position: center;" alt="we can do IT!アプリ">
+                        <img class="img-zoom" src="images/wcdi-thumbnail.jpg" style="
+                        object-position: bottom;" alt="we can do IT!アプリ">
                       </div>
                       <div class="detail__texts appear left">
                         <div class="detail__texts-inner">
                           <div class="detail__title main-title item">
                             <span class="white">we can do IT ! -アイティ-</span>
                           </div>
+                          <div class="detail__ item">
+                            <p class="detail__comment">
+                              <br>
+                              <!-- 「Laravel」などのフレームワークを使用せず、<br>
+                              PHPとMYSQLを用いてイチから作成。<br> -->
+                              トレンドITに関する記事や発信に需要があることに注目し、<br>
+                              情報交換サービスの使いやすさとはなにか考えました。<br>
+                              <br>
+                              
+                              私自身、これを先に理解しておくべきだった！<br>となることが多く、<br>
+                              ”取捨選択できるように複数の選択肢を見つける"ことが<br>
+                              そもそも出来ていないことに気付きました。<br>
+                              <br>
+                              「賛成」「反対」の二極でわかりやすく投票されていたら、<br>
+                              そんな私のようにリサーチ力が低すぎる初学者でも、<br>
+                              まず、他の可能性を考慮出来るようになると思い、開発しました。<br>
+
+                              <!-- 次は、フレームワークを使用した実用的な開発を行うことが課題。<br>
+                              当初は、「IT技術」とは異なるテーマで開発していたが<br>対象に人物があまり関わらない議題に変更。<br>8割ほど完成しているのなかで、デザインやデータベースの変更などを行う。<br>
+                              そのため開発前段階でのペルソナの想定、カスタマージャーニー等、想定されるユーザーのことを深く掘り下げることも次の課題。 -->
+                              </p>
+                          </div>
+                          <div class="detail__btn item">
+                            <button class="btn letter-spacing">Go to page</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="detail__texts appear left">
+                        <div class="detail__texts-inner">
+                          
                           <div class="detail__ item">
                             <div class="detail__sub sub-title item">【使用技術】</div>
                             <p><ul>
@@ -121,9 +122,6 @@
                               <li>Git/GitHub</li>
                             </ul>
                               </p>
-                          </div>
-                          <div class="detail__btn item">
-                            <button class="btn letter-spacing">Go to page</button>
                           </div>
                         </div>
                       </div>
@@ -149,55 +147,137 @@
                           </div>
                         </div>
                       </div>
-                      <div class="detail__img cover-slide">
-                        <img class="img-zoom" src="images/app-1.jpg" alt="人事管理システムアプリケーション">
-                      </div>
-                      <div class="detail__description texts appear left">
-                        <div class="detail__texts-inner">
-                          <div class="detail__comment">
-                            <p class="detail__comment"><br>
-                              「Laravel」などのフレームワークを使用せず、                              PHPとMYSQLを用いてイチから作成。<br>
-                              次は、フレームワークを使用した実用的な開発を行うことが課題。<br><br>
-                              当初は、「IT技術」とは異なるテーマで開発していたがネットリテラシーの観点から、<br>対象に人物があまり関わらない議題に変更。<br>8割ほど完成しているのなかで、デザインやデータベースの変更などを行う。<br>
-                              そのため開発前段階でのペルソナの想定、カスタマージャーニー等、想定されるユーザーのことを深く掘り下げることも次の課題。
-                              </p>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- <div class="detail__texts appear left">
-                        <div class="detail__texts-inner">
-                          <div class="detail__description item">
-                            <p>
-                              【非機能要件】<br>
-                              ・SQLインジェクションのセキュリティーホール対策<br>
-                              ・フォームのバリデーションチェック<br>
-                              ・Preparedステートメントでパフォーマンスの向上<br>
-                              ・.htaccessでのURLのリダイレクト処理<br>
-                              ・パスワードのハッシュ化でセキュリティの向上（bcrypt）<br>
-                              </p>
-                          </div>
-                        </div>
-                      </div> -->
+                      
+
+
                     </div>
                   </div>
                 </div>
 
-                <div class="works__item">
+                <div class="works__item appear right">
+                  <div class="works__header">
+                    <h2 class="main-title tween-animate-title">Works No.3</h2>
+                    <p class="sub-title tween-animate-title">作品その３</p>
+                  </div>
+                  <div class="works__innerleft item">
+                    <div class="works__container">
+                      <div class="detail__img cover-slide">
+                        <img class="img-zoom" src="images/wanwan-thumbnail.jpg" style="
+                        object-position: left top;" alt="わんわん物語">
+                      </div>
+                      <div class="detail__texts appear left">
+                        <div class="detail__texts-inner">
+                          <div class="detail__title main-title item">
+                            <span class="white">わんわん物語</span>
+                          </div>
+                          <div class="detail__ item">
+                            <p class="detail__comment">
+                              <br>
+                              Javascriptだけでつくるゲームの情報は豊富にあり、<br>
+                              比較的つくりやすく大変勉強になりました。<br>
+                              <br>
+                              遊びごごろでつくりましたが、<br>
+                              この開発を通して、体系的で良質な教材以外にも<br>
+                              興味があるものをつくることで、<br>得られる知識の大きさに気付きました！<br>
+                              <br>
+                              
+                              サイズや絵柄の良いモンスター画像を用意するために<br>
+                              ペイント3Dで自分で作成しましたが、<br>
+                              デザインは有名RPGそのままなので、<br>
+                              次はオリジナルでデザインして公開できるようにし、<br>
+                              JAVAなどの動的型付け言語を用いて、
+                              規模も大きいものにします。<br>
+                              （ラスボスは自分のペットです）<br>
+                              </p>
+                          </div>
+                          <a href="https://tamuracoffe.nezumizuki.xyz/" target="_blank">
+                            <div class="detail__btn item">
+                              <button class="btn letter-spacing">Go to page</button>
+                            </div>
+                            </a>
+                        </div>
+                      </div>
+                      <div class="detail__texts appear left">
+                        <div class="detail__texts-inner">
+                          
+                          <div class="detail__ item">
+                            <div class="detail__sub sub-title item">【使用技術】</div>
+                            <p><ul>
+                              <li>HTML</li>
+                              <li>JavaScript</li>
+                              <li>ペイント3D</li>
+                              
+                              <li>AWS S3</li>
+                              <li>AWS CloudFront</li>
+                              <li>AWS Route53</li>
+                            </ul>
+                              </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="detail__texts appear left">
+                        <div class="detail__texts-inner">
+                          <div class="detail__ item">
+                            <div class="detail__sub sub-title item">【バージョン管理】</div>
+                            <ul>
+                              <li>Git/GitHub</li>
+                            </ul>
+                            <div class="detail__sub sub-title item">【開発環境】</div>
+                            <ul>
+                                <li>Windows</li>
+                                <li>VScode</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="works__item appear left">
                   <div class="works__header">
                     <h2 class="main-title tween-animate-title">Works No.2</h2>
                     <p class="sub-title tween-animate-title">作品その２</p>
                   </div>
-                  <div class="works__innerleft">
+                  <div class="works__innerright item">
                     <div class="works__container">
                       <div class="detail__img cover-slide">
-                        <img class="img-zoom" src="images/スクリーンショット (33).png" style="
-                        object-position: left;" alt="人事管理システム">
+                        <img class="img-zoom" src="images/jinji-thumbnail.jpg" style="
+                        object-position: left top;" alt="人事管理システムアプリ">
                       </div>
                       <div class="detail__texts appear left">
                         <div class="detail__texts-inner">
                           <div class="detail__title main-title item">
                             <span class="white">人事管理システム</span>
                           </div>
+                          <div class="detail__ item">
+                            <p class="detail__comment">
+                              <br>
+                              PHPの基本的な文法学習は、<br>
+                              「初心者からちゃんとしたプロになる PHP基礎入門<br>                         （MdN社）」を使用しました。<br>
+                              それらを定着させるために、開発した初めてのWEBアプリです。<br>
+                              <br>
+                              
+                              個人情報を扱う想定であるので、<br>
+                              データベースに外部からアクセス出来ないようにする、<br>
+                              パブリックサブネット：WEBサーバー<br>
+                              プライベートサブネット：DBサーバー<br>
+                              の配置をする基本構築をしました。<br>
+                              ロ－カル環境と異なる構築を行うだけで非常に苦労し、<br>
+                              かなり時間もかかりましたが、<br>
+                              サーバー周りの知識がついたことを実感しております。<br>
+                              </p>
+                          </div>
+                          <a href="https://tamuracoffe.nezumizuki.xyz/" target="_blank">
+                            <div class="detail__btn item">
+                              <button class="btn letter-spacing">Go to page</button>
+                            </div>
+                            </a>
+                        </div>
+                      </div>
+                      <div class="detail__texts appear left">
+                        <div class="detail__texts-inner">
+                          
                           <div class="detail__ item">
                             <div class="detail__sub sub-title item">【使用技術】</div>
                             <p><ul>
@@ -209,47 +289,23 @@
                               <li>AWS VPC, EC2(ホスティング、データベース)</li>
                               <li>AWS LoadBalancer, Route53<br>(負荷分散、独自ドメイン)</li>
                               
-                              <li>Git/GitHub</li>
                             </ul>
-                            <div class="detail__sub sub-title item">【要件定義】</div>
-                            <ul>
-                              <li>ログイン機能</li>
-                                <li>ユーザー登録、削除</li>
-                                <li>ユーザー情報一覧表示</li>
                               </p>
                           </div>
-                          <a href="https://tamuracoffe.nezumizuki.xyz/">
-                          <div class="detail__btn item">
-                            <button class="btn letter-spacing">Go to page</button>
-                          </div>
-                        </a>
                         </div>
                       </div>
                       <div class="detail__texts appear left">
                         <div class="detail__texts-inner">
                           <div class="detail__ item">
-                            <p class="detail__comment"><br>
-                              「Laravel」などのフレームワークを使用せず、                              PHPとMYSQLを用いてイチから作成。<br>
-                              次は、フレームワークを使用した実用的な開発を行うことが課題。<br><br>
-                              当初は、「IT技術」とは異なるテーマで開発していたがネットリテラシーの観点から、<br>対象に人物があまり関わらない議題に変更。<br>8割ほど完成しているのなかで、デザインやデータベースの変更などを行う。<br>
-                              そのため開発前段階でのペルソナの想定、カスタマージャーニー等、想定されるユーザーのことを深く掘り下げることも次の課題。
-                              </p>
+                            <div class="detail__sub sub-title item">【バージョン管理】</div>
+                            <ul>
+                              <li>Git/GitHub</li>
                             </ul>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="detail__img cover-slide">
-                        <img class="img-zoom" src="images/app-1.jpg" alt="人事管理システムアプリケーション">
-                      </div>
-                      <div class="detail__description texts appear left">
-                        <div class="detail__texts-inner">
-                          <div class="detail__comment">
-                            <p class="detail__comment"><br>
-                              <!-- 「Laravel」などのフレームワークを使用せず、                              PHPとMYSQLを用いてイチから作成。<br>
-                              次は、フレームワークを使用した実用的な開発を行うことが課題。<br><br>
-                              当初は、「IT技術」とは異なるテーマで開発していたがネットリテラシーの観点から、<br>対象に人物があまり関わらない議題に変更。<br>8割ほど完成しているのなかで、デザインやデータベースの変更などを行う。<br>
-                              そのため開発前段階でのペルソナの想定、カスタマージャーニー等、想定されるユーザーのことを深く掘り下げることも次の課題。 -->
-                              </p>
+                            <div class="detail__sub sub-title item">【開発環境】</div>
+                            <ul>
+                                <li>Windows</li>
+                                <li>VScode</li>
+                            </ul>
                           </div>
                         </div>
                       </div>
@@ -257,12 +313,12 @@
                   </div>
                 </div>
                 
-                <div class="works__item">
+                <div class="works__item appear right">
                   <div class="works__header">
                     <h2 class="main-title tween-animate-title">Works No.1</h2>
                     <p class="sub-title tween-animate-title">作品その１</p>
                   </div>
-                  <div class="works__innerright">
+                  <div class="works__innerleft item">
                     <div class="works__container">
                       <div class="detail__img cover-slide">
                         <img class="img-zoom" src="images/coffe-thumbnail.jpg" style="
@@ -274,58 +330,60 @@
                             <span class="white">田村珈琲ショップ</span>
                           </div>
                           <div class="detail__ item">
-                            <div class="detail__sub sub-title item">【使用技術】</div>
-                            <p><ul>
-                              <li>HTML/CSS</li>
-                              <li>Apache 2.4.48</li>
-                              
-                              <li>AWS S3</li>
-                              <li>AWS Cloudfront, Route53<br>(独自ドメイン)</li>
-                              
-                              <li>Git/GitHub</li>
-                            </ul>
-                            <div class="detail__sub sub-title item">【要件定義】</div>
-                            <ul>
-                              <li>ログイン機能</li>
-                                <li>ユーザー登録、削除</li>
-                                <li>ユーザー情報一覧表示</li>
+                            <p class="detail__comment">
+                              <br>
+                              初めて作成したWEBコンテンツです。<br>
+                              習得している知識だけで見栄えの良いものかつ、<br>
+                              とにかく完走しきることを目標に開発しました。<br>
+
+                              ロゴはペイント3Dで作成しましたが、<br>
+                              あまりセンスの良いものがつくれませんでした。<br>
+                              <br>
+                              ですがこれを達成出来たことで、<br>
+                              当サイトmizukiWEB開発に繋がったので、<br>
+                              完走して本当に良かったと考えています。
                               </p>
                           </div>
                           <a href="https://tamuracoffe.nezumizuki.xyz/" target="_blank">
-                          <div class="detail__btn item">
-                            <button class="btn letter-spacing">Go to page</button>
+                            <div class="detail__btn item">
+                              <button class="btn letter-spacing">Go to page</button>
+                            </div>
+                            </a>
+                        </div>
+                      </div>
+                      <div class="detail__texts appear left">
+                        <div class="detail__texts-inner">
+                          
+                          <div class="detail__ item">
+                            <div class="detail__sub sub-title item">【使用技術】</div>
+                            <p><ul>
+                              <li>HTML</li>
+                              <li>CSS</li>
+                              <li>Google Maps API</li>
+                              
+                              <li>AWS S3</li>
+                              <li>AWS CloudFront</li>
+                              <li>AWS Route53</li>
+                            </ul>
+                              </p>
                           </div>
-                        </a>
                         </div>
                       </div>
                       <div class="detail__texts appear left">
                         <div class="detail__texts-inner">
                           <div class="detail__ item">
-                            <p class="detail__comment"><br>
-                              「Laravel」などのフレームワークを使用せず、                              PHPとMYSQLを用いてイチから作成。<br>
-                              次は、フレームワークを使用した実用的な開発を行うことが課題。<br><br>
-                              当初は、「IT技術」とは異なるテーマで開発していたがネットリテラシーの観点から、<br>対象に人物があまり関わらない議題に変更。<br>8割ほど完成しているのなかで、デザインやデータベースの変更などを行う。<br>
-                              そのため開発前段階でのペルソナの想定、カスタマージャーニー等、想定されるユーザーのことを深く掘り下げることも次の課題。
-                              </p>
+                            <div class="detail__sub sub-title item">【開発環境】</div>
+                            <ul>
+                                <li>Windows</li>
+                                <li>VScode</li>
                             </ul>
                           </div>
                         </div>
                       </div>
-                        <div class="detail__inner appear up">
-                          <div class="detail__container">
-                            <img class="img-big item" src="images/tamuracoffe.archi.png" alt="田村珈琲のサムネ">
-                          </div>
-                        </div>
                     </div>
                   </div>
                 </div>
 
-                
-
-
-
-
-               
               </section>
               <section class="certs">
                 <div class="certs__header">
@@ -387,52 +445,46 @@
           <sapn class="logo__WEB">WEB</sapn>
         </div>
         <ul class="mobile-menu__main">
-          <li class="mobile-menu__item">
+          <!-- <li class="mobile-menu__item">
             <a class="mobile-menu__link" href="details/first.html">
                 <span class="main-title">Works No.5</span>
                 <span class="sub-title">冷食おいしイイネへ</span>
             </a>
-          </li>
+          </li> -->
           <li class="mobile-menu__item">
               <a class="mobile-menu__link" href="second.html">
                   <span class="main-title">Works No.4</span>
-                  <span class="sub-title">トーカバウト五輪へ</span>
+                  <span class="sub-title">we can do IT！-アイティ-</span>
               </a>
           </li>
           <li class="mobile-menu__item">
               <a class="mobile-menu__link" href="toppage.html">
                   <span class="main-title">Works No.3</span>
-                  <span class="sub-title">mizukiWEBについて</span>
-              </a>
-          </li>
-          <li class="mobile-menu__item">
-              <a class="mobile-menu__link" href="toppage.html">
-                  <span class="main-title">Works No.3</span>
-                  <span class="sub-title">LINE bot To doへ</span>
+                  <span class="sub-title">わんわん物語</span>
               </a>
           </li>
           <li class="mobile-menu__item">
               <a class="mobile-menu__link" href="toppage.html">
                   <span class="main-title">Works No.2</span>
-                  <span class="sub-title">田村珈琲へ</span>
+                  <span class="sub-title">人事管理システム</span>
               </a>
           </li>
           <li class="mobile-menu__item">
               <a class="mobile-menu__link" href="toppage.html">
                   <span class="main-title">Works No.1</span>
-                  <span class="sub-title">人事管理システムへ</span>
+                  <span class="sub-title">田村珈琲</span>
               </a>
           </li>
           <li class="mobile-menu__item">
               <a class="mobile-menu__link" href="https://qiita.com/ebtiag">
                   <span class="main-title">Qiita</span>
-                  <span class="sub-title">わたしのQiitaアカウントへ</span>
+                  <span class="sub-title">わたしのQiitaへ</span>
               </a>
           </li>
           <li class="mobile-menu__item">
               <a class="mobile-menu__link" href="https://github.com/mizukikaihatsu">
                   <span class="main-title">Git Hub</span>
-                  <span class="sub-title">わたしのGit Hubアカウントへ</span>
+                  <span class="sub-title">わたしのGit Hubへ</span>
               </a>
           </li>
         </ul>
