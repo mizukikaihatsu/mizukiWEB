@@ -644,6 +644,10 @@
           transform: translateY(-11px) rotate(-135deg);
 }
 
+html {
+  font-size: 1.2rem;
+}
+
 body {
   font-family: 'Fredoka One', 'Yusei Magic', sans-serif;
   color: #403e3d;
@@ -655,27 +659,31 @@ img {
   vertical-align: bottom;
 }
 
-.font-sm, .sub-title {
-  font-size: 14px;
-}
-
-.font-md, .mobile-menu .main-title, .works__title, .certs__title {
+.font-sm {
   font-size: 17px;
 }
 
-.font-lr, .works__header, .side {
+.font-md, .mobile-menu .main-title, .sub-title, .detail__comment, .top__title, .works__title, .certs__title {
   font-size: 22px;
 }
 
-.font-lg, .main-title {
-  font-size: 25px;
+.font-lr, .top__header, .works__header, .side {
+  font-size: 24px;
 }
 
-.mb-sm, .detail__sub, .detail__img, .works__header, .works__title, .certs__title {
+.font-lg, .main-title {
+  font-size: 26px;
+}
+
+.mb-sm, .detail__sub, .detail__img, .top__header, .top__title, .works__header, .works__title, .certs__title {
   margin-bottom: 16px !important;
 }
 
-.mb-lg, .detail, .works {
+.mb-md, #flipbook {
+  margin-bottom: 40px !important;
+}
+
+.mb-lg, .detail, .top, .works {
   margin-bottom: 80px !important;
 }
 
@@ -687,7 +695,7 @@ img {
   padding-bottom: 80px !important;
 }
 
-.content-width, .header__inner, .detail, .works__container, .works__header, .certs__header, .certs__container, .footer {
+.content-width, .header__inner, .detail, .top__container, .top__header, .works__container, .works__header, .certs__header, .certs__container, .footer {
   width: 90%;
   margin: 0 auto;
   max-width: 1070px;
@@ -703,7 +711,7 @@ img {
   color: #535353;
 }
 
-.flex, .works__container, .certs__container, .footer__nav, .footer__ul {
+.flex, .top__container, .works__container, .certs__container, .footer__nav, .footer__ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -715,6 +723,15 @@ img {
 
 #content {
   padding-top: 150px;
+}
+
+#flipbook {
+  /* width: 400px; flipbook自体の横幅なので各ページは200px */
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1070px;
+  height: 500px;
+  /* margin: 10% 20%; 一番左端だとたまに見切れるので適当に移動 */
 }
 
 #main-content {
@@ -801,12 +818,8 @@ main {
           align-items: center;
 }
 
-.detail__container {
-  padding: 20px;
-}
-
-.detail__container > img {
-  height: 100%;
+.detail__btn {
+  text-align: center;
 }
 
 .detail__title {
@@ -848,14 +861,23 @@ main {
   height: 100%;
 }
 
-.detail__img.inview {
+.detail.inview {
   -webkit-box-shadow: inset 0 0 30px black;
           box-shadow: inset 0 0 30px black;
+}
+
+.detail__comment {
+  color: #bb4f02;
 }
 
 .detail__texts.inview .detail__title::before {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+.top a {
+  color: #535353 !important;
+  text-decoration: none !important;
 }
 
 .works__innerright {
@@ -868,7 +890,7 @@ main {
   bottom: 0;
   right: 0;
   width: 92.5%;
-  height: 103%;
+  height: 96%;
   background: url(../images/yellow.jpg);
   z-index: -20;
 }
@@ -883,7 +905,7 @@ main {
   bottom: 0;
   left: 0;
   width: 92.5%;
-  height: 103%;
+  height: 96%;
   background: url(../images/yellow.jpg);
   z-index: -20;
 }
@@ -1077,13 +1099,22 @@ main {
 }
 
 @media (min-width: 600px) {
-  .flex, .works__container, .certs__container, .footer__nav, .footer__ul {
+  .flex, .top__container, .works__container, .certs__container, .footer__nav, .footer__ul {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  .top__container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .top__item {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
   }
   .works__container {
     -webkit-box-pack: justify;
@@ -1103,6 +1134,10 @@ main {
   .certs__item {
     -ms-flex-preferred-size: 47%;
         flex-basis: 47%;
+  }
+  .detail__description {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
   .detail__texts, .detail__img {
     -ms-flex-preferred-size: 47%;
@@ -1128,19 +1163,19 @@ main {
 }
 
 @media (min-width: 960px) {
-  .font-sm, .sub-title {
+  .font-sm {
     font-size: 16px;
   }
-  .font-md, .mobile-menu .main-title, .works__title, .certs__title {
+  .font-md, .mobile-menu .main-title, .sub-title, .detail__comment, .top__title, .works__title, .certs__title {
     font-size: 19px;
   }
-  .font-lr, .works__header, .side {
+  .font-lr, .top__header, .works__header, .side {
     font-size: 23px;
   }
   .font-lg, .main-title {
     font-size: 36px;
   }
-  .mb-lg, .detail, .works {
+  .mb-lg, .detail, .top, .works {
     margin-bottom: 150px !important;
   }
   .pb-lg {

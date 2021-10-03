@@ -5,6 +5,16 @@
     flex-wrap: wrap;
 }
 
+.top {
+    &__container {
+        // 左右に散らす
+        justify-content: space-between;
+    }
+    &__item {
+        flex-basis: 50%;
+    }
+}
+
 .works {
     &__container {
         // 左右に散らす
@@ -32,11 +42,15 @@
 }
 
 .detail {
+    &__description {
+        flex-basis: 100%;
+    }
     
     &__texts,
     &__img {
         flex-basis: 47%;
     }
+
 
     &__texts {
         display: flex;
