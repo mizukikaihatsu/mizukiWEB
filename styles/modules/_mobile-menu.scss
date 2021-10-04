@@ -68,6 +68,11 @@ $cMenuOpen: $cSubTitle;
         color: $cSubTitle;
         text-decoration: none　!important;
     }
+    & a {
+        color: $cTlGray;
+        text-decoration: none !important;
+        vertical-align: middle;
+      }
 }
 
 .menu-open {

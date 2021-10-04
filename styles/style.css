@@ -576,6 +576,12 @@
           text-decoration: none　 !important;
 }
 
+.mobile-menu a {
+  color: #403e3d;
+  text-decoration: none !important;
+  vertical-align: middle;
+}
+
 .menu-open #container {
   -webkit-transform: translate(-300px, 60px);
           transform: translate(-300px, 60px);
@@ -794,7 +800,7 @@ main {
 }
 
 .header__li > a {
-  color: #535353;
+  color: #535353 !important;
   text-decoration: none !important;
   text-transform: uppercase;
   font-size: 1.2rem;
