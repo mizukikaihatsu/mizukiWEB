@@ -673,7 +673,7 @@ img {
   font-size: 22px;
 }
 
-.font-lr, .works__header, .side {
+.font-lr, .works__header {
   font-size: 24px;
 }
 
@@ -1011,6 +1011,7 @@ main {
   top: 55%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  font-size: 28px;
   -webkit-transition: all .3s ease-in;
   transition: all .3s ease-in;
 }
@@ -1169,7 +1170,7 @@ main {
   .font-md, .mobile-menu .main-title, .sub-title, .detail__comment, .works__title, .certs__title {
     font-size: 19px;
   }
-  .font-lr, .works__header, .side {
+  .font-lr, .works__header {
     font-size: 23px;
   }
   .font-lg, .main-title {

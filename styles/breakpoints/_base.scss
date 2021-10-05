@@ -401,7 +401,7 @@ main {
   position: fixed;
   top: 55%;
   transform: translateY(-50%);
-  @extend .font-lr;
+  font-size: 28px;
   transition: all .3s ease-in;
 
   & a {
