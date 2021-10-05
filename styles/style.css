@@ -1183,8 +1183,8 @@ main {
     padding-bottom: 150px !important;
   }
   .certs__item {
-    -ms-flex-preferred-size: 25%;
-        flex-basis: 25%;
+    -ms-flex-preferred-size: 20%;
+        flex-basis: 20%;
   }
   .certs__img {
     height: 335px;
@@ -1199,8 +1199,8 @@ main {
     padding: 20px 150px;
   }
   .certs__item {
-    -ms-flex-preferred-size: 21%;
-        flex-basis: 21%;
+    -ms-flex-preferred-size: 19%;
+        flex-basis: 19%;
   }
   .side {
     display: block;
