@@ -88,34 +88,26 @@
                   <div class="works__innerleft item">
                     <div class="works__container">
                       <div class="detail__img cover-slide">
-                        <img class="img-zoom" src="images/-thumbnail.jpg" style="
-                        object-position: left top;" alt="わんわんファンタジー">
+                        <img class="img-zoom" src="images/docker-de-note-thumbnail.jpg" style="
+                        object-position: left top;" alt="Docker-de-Note -ドッカー ド ノート-">
                       </div>
                       <div class="detail__texts appear left">
                         <div class="detail__texts-inner">
                           <div class="detail__title main-title item">
-                            <span class="white">Laravel de ノート</span>
+                            <span class="white">Docker-de-Note<br> -ドッカー ド ノート-</span>
                           </div>
                           <div class="detail__ item">
                             <p class="detail__comment">
                               <br>
-                              メモアプリです。<br><br>
-                              Docker、Laravelとして開発しました。<br>
-                              JSのみでつくるゲームの情報は豊富にあり、
-                              比較的つくりやすく大変勉強になりました。<br>
+                              「Docker」の学習のために取り組みました。
                               <br>
-                              遊びごごろでつくりましたが、
-                              この開発を通して、体系的で良質な教材以外にも
-                              興味があるものをつくることで、得られる知識の大きさに気付きました！<br>
+                              Evernote風のアプリケーションです。<br>
                               <br>
-                              
-                              
-                              サイズや絵柄の良いモンスター画像を用意するために
-                              ペイントでドット絵を自分で作成しましたが、
-                              デザインは有名RPGそのままなので、
-                              次はオリジナルでデザインしてリリースできるようにし、
-                              規模も大きいものにしたいです。<br>
-                              （ラスボスは自分のペットです）<br>
+                              Dockerは運用まで見据えないと理解がしにくいと考えました。 <br>
+                              ローカルで作成後、DockerでAWSにデプロイ。<br>（と言ってみたくて開発しました。）<br>
+                                                            <br>
+                              また、フレームワーク「Laravel」を使用して同じ挙動をするものも開発し、相互の違いが理解が深まりました。<br>
+                              <br>
                               </p>
                           </div>
                           <a href="http://18.179.10.24:8080/" target="_blank">
@@ -129,31 +121,34 @@
                         <div class="detail__texts-inner">
                           
                           <div class="detail__ item">
-                            <div class="detail__sub sub-title item">【使用技術】</div>
-                            <p><ul>
-                              <li>HTML</li>
-                              <li>JavaScript</li>
-                              <li>ペイント3D</li>
-                              
-                              <li>AWS S3</li>
-                              <li>AWS CloudFront</li>
-                              <li>AWS Route53</li>
+                            <div class="detail__sub sub-title item">【フロントエンド】</div>
+                            <ul>
+                                <li>HTML/CSS</li>
+                                <li>JavaScript</li>
+                                <li>Bootstrap</li>
                             </ul>
-                              </p>
+                            <div class="detail__sub sub-title item">【バックエンド】</div>
+                            <ul>
+                                <li>PHP 7.4.10</li>
+                                <li>mysql 5.7</li>
+                            </ul>
                           </div>
                         </div>
                       </div>
                       <div class="detail__texts appear left">
                         <div class="detail__texts-inner">
                           <div class="detail__ item">
-                            <div class="detail__sub sub-title item">【バージョン管理】</div>
+                            <div class="detail__sub sub-title item">【インフラ】</div>
                             <ul>
-                              <li>Git/GitHub</li>
+                                <li>nginx 1.19.1</li>
+                                <li>docker 19</li>
+                                <li>docker-compose 1.27</li>
+                                <li>AWS VPC EC2(ホスティング)</li>
                             </ul>
                             <div class="detail__sub sub-title item">【開発環境】</div>
                             <ul>
-                                <li>Windows</li>
-                                <li>VScode</li>
+                              <li>Windowsで開発後、AWS上にデプロイ</li>
+                              <li>VScodeでSSH接続</li>
                             </ul>
                           </div>
                         </div>
@@ -562,10 +557,16 @@
         <ul class="mobile-menu__main">
           <!-- <li class="mobile-menu__item">
             <a class="mobile-menu__link" href="details/first.html">
-                <span class="main-title">Works No.5</span>
+                <span class="main-title">Works No.6</span>
                 <span class="sub-title">冷食おいしイイネへ</span>
             </a>
           </li> -->
+          <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="http://18.179.10.24:8080/" target="_blank">
+                  <span class="main-title">Works No.5</span>
+                  <span class="sub-title">Docker-de-Note-ドッカー ド ノート-</span>
+              </a>
+          </li>
           <li class="mobile-menu__item">
               <a class="mobile-menu__link" href="wecandoit/" target="_blank">
                   <span class="main-title">Works No.4</span>
@@ -600,6 +601,12 @@
               <a class="mobile-menu__link" href="https://github.com/mizukikaihatsu" target="_blank">
                   <span class="main-title">Git Hub</span>
                   <span class="sub-title">わたしのGit Hubへ</span>
+              </a>
+          </li>
+          <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="https://hub.docker.com/u/nezumizuki" target="_blank">
+                  <span class="main-title">Docker Hub</span>
+                  <span class="sub-title">わたしのDocker Hubへ</span>
               </a>
           </li>
         </ul>
