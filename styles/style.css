@@ -1008,7 +1008,7 @@ main {
 .side {
   display: none;
   position: fixed;
-  top: 55%;
+  top: 65%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   font-size: 28px;
@@ -1020,6 +1020,7 @@ main {
   color: #403e3d;
   text-decoration: none !important;
   vertical-align: middle;
+  margin: 0 40px;
 }
 
 .side.left {
@@ -1073,6 +1074,11 @@ main {
 
 .icon.qiita::before {
   background-image: url(../images/qiita-logo.png);
+  margin: 0 -10px;
+}
+
+.icon.docker::before {
+  background-image: url(../images/docker-icon.png);
   margin: 0 -10px;
 }
 
